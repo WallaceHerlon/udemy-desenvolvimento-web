@@ -14,6 +14,7 @@
 
     function promocao($valor = null)
     {
+
         echo "Acessou a função<br>";
         echo "Paramentro: $valor <br>";
         if ($valor == "cursophp") {
