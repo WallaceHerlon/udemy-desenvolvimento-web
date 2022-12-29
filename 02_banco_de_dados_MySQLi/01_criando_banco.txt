@@ -1,0 +1,23 @@
+//Para criar o banco de dados teste utilizaremos a sintaxe CREATE, conforme o código a seguir:
+	CREATE DATABASE teste;
+
+//Podemos complementar a sintaxe opcional IF NOT EXISTS, que permite ao MySQL verificar se o nome escolhido esteja sendo utilizando no servidor:
+	CREATE DATABASE IF NOT EXISTS teste;
+
+//Para visualizar uma lista com todos os bancos de dados existentes no servidor, use o comando:
+	SHOW DATABASES;
+
+//Para remover os bancos de dados existentes no servidor:
+	DROP DATABASE DBDevMedia;
+
+//Selecionando o banco de dados:
+	USE DBDevMedia;
+
+//A tabela contatos terá a seguinte estrutura da:
+	CREATE TABLE contatos (
+        	nome VARCHAR(50) NOT NULL,
+        	telefone VARCHAR(25) NOT NULL
+        	);
+
+//Para verificar se a tabela foi criada use o comando:
+	SHOW TABLES;
