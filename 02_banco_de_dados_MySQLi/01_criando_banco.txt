@@ -21,3 +21,6 @@
 
 //Para verificar se a tabela foi criada use o comando:
 	SHOW TABLES;
+
+//Remover a tabela usando o comando:
+	DROP TABLE contatos;

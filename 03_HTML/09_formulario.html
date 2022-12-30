@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    
+    <form>
+        <h2>Formulário</h2>
+        <label>Nome:</label>
+        <input type="text" name="nome" placeholder="Nome">
+        <label>E-mail</label>
+        <input type="email" name="email" placeholder="E-mail">
+
+        <h2>Checkbox</h2>
+        <label for="">Categoria da Habilitação</label><br><br>
+        <input type="checkbox" name="tp_hab" value="A">A<br>
+        <input type="checkbox" name="tp_hab" value="B">B<br>
+        <input type="checkbox" name="tp_hab" value="C">C<br>
+        <input type="checkbox" name="tp_hab" value="D">D<br>
+
+        <h2>Radio</h2>
+        <label for="Turma"></label>
+        <input type="radio" name="num_tur" value="tuma_1" checked>Turma 1 <br>
+        <input type="radio" name="num_tur" value="tuma_2">Turma 2 <br>
+        <input type="radio" name="num_tur" value="tuma_3">Turma 3 <br>
+        <input type="radio" name="num_tur" value="tuma_4">Turma 4 <br>
+
+        <h2>Select</h2>
+        <label>Nível de acesso</label>
+        
+        <select name="nivel_acesso" id="">
+            <option value="">Selecione</option>
+            <option value="1">Administrador</option>
+            <option value="2">Financeiro</option>
+            <option value="3">Cliente</option>
+        </select>
+
+        <h2>Textarea</h2>
+        <label for="">Mensagem:</label>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        
+    </form>
+
+    
+
+</body>
+</html>
