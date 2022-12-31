@@ -1,0 +1,25 @@
+/* Seletor tipo */
+h1 {
+    color: green;
+}
+
+/* Seletor descendente */
+p span {
+    color: red;
+}
+
+/* Seletor pseudo-classe */
+a:hover {
+    color: yellow;
+}
+
+/* Seletor Id(#) */
+#paragrafo {
+    color: pink;
+}
+
+/* Seletor Classes(.) */
+.menu {
+    color: blue;
+}
+

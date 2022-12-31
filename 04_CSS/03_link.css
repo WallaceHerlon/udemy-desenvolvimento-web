@@ -1,0 +1,25 @@
+body {
+    background-color: #e8e8e8;
+    color: #2d492d;
+}
+
+/* Link não visitado */
+a:link {
+    text-decoration: none;
+    color: #334d5c;
+}
+
+/* Link visitado */
+a:visited {
+    color: #e07c45;
+}
+
+/* Passar o mouse sobre o link */
+a:hover {
+    color: #f2cb00;
+}
+
+/* Link selecionado */
+a:active {
+    color: #00bf9b;
+}

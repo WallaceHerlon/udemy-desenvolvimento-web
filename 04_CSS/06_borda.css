@@ -1,0 +1,11 @@
+.borda {
+    /* border-style: solid, dotted, dashed, double, groove, ridge, inset, outset */
+    border-style: dotted;
+}
+
+.largura {
+    border-width: 10px;
+    border-style: solid;
+    border-color: #ffd700;
+}
+
