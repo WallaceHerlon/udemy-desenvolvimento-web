@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Eventos</title>
+    <style>
+        .contPers{
+            background-color: #00008b;
+            width: 150px;
+            height: 50px;
+            color: white;
+            padding: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>onclick</h1>
+    <button onclick="carConteudo()">Carregar conteúdo</button>
+    <p id="conteudo"></p>
+
+    <h1>onmouseover e onmouseout</h1>
+    <div onmouseover="mouseOver()" onmouseout="mouseOut()" class="contPers" id="mouseAlt">Passe o mouse</div>
+
+    <h1>onchange e onkeyup</h1>
+    <form>
+        Nome: <input type="text" name="nome" id="nome" onchange="converTexto()">
+        <br><br>
+        Senha: <input type="password" name="senha" id="senha" onkeyup="validarSenha()">
+        <br><br>
+        <div id="erroSenha"></div>
+    </form>
+
+    <Script>
+       function carConteudo(){
+            document.getElementById("conteudo").innerHTML = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam voluptas dolorem reprehenderit totam voluptates asperiores rem. Est quae nobis tenetur consequuntur doloremque pariatur ducimus eaque reprehenderit incidunt. Cupiditate, corrupti accusantium.";
+        }
+        function mouseOver(){
+            document.getElementById("mouseAlt").innerHTML = "Retire o mouse";
+        } 
+        function mouseOut(){
+            document.getElementById("mouseAlt").innerHTML = "Passe o mouse";
+        } 
+        function converTexto(){
+            var nome = document.getElementById("nome");
+            nome.value = nome.value.toUpperCase();
+        }
+        function validarSenha(){
+            var senha = document.getElementById("senha").value;
+            if(senha == "" || senha.length <= 5){
+                document.getElementById("erroSenha").innerHTML = "Preencha o campo senha com minimo 6 caracteres";
+            } else {
+                document.getElementById("erroSenha").innerHTML = "Senha válida";
+            }
+        }
+    </Script>
+
+</body>
+
+</html>
