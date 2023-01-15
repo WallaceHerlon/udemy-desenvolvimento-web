@@ -234,3 +234,75 @@ body {
 }
 /* Fim sidebar */
 
+.content .wrapper {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--bg-color);
+}
+
+.content .row {
+    background-color: var(--fourth-color);
+    border-radius: 6px;
+    /*margin: 10px;*/
+}
+
+.wrapper .row {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+
+
+/* Inicio dashboard */
+
+.row .box {
+    width: 23%;
+    margin: 5px 1%;
+    height: 150px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: var(--fourth-color);
+    border-radius: 5px;
+    overflow: hidden;
+    flex-direction: column;
+    box-shadow: 0 3px 4px 1px rgba(0, 0, 0, 0.12);
+}
+
+.row .box-first {
+    background-color: var(--primary-color);
+}
+
+.row .box-second {
+    background-color: var(--success-color);
+}
+
+.row .box-third {
+    background-color: var(--warning-color);
+}
+
+.row .box-fourth {
+    background-color: var(--danger-color);
+}
+
+.box span {
+    margin: 5px 0;
+    font-size: 17px;
+    position: relative;
+}
+
+@media (max-width: 1024px) {
+    .row .box {
+        width: 48%;
+    }
+}
+
+@media(max-width: 768px) {
+    .row .box {
+        width: 98%;
+    }
+}
+/* Fim dashboard */
