@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/icon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/adm.css">
+    <title>Adm</title>
+</head>
+
+<body>
+    <!-- Inicio Navbar -->
+    <nav class="navbar">
+        <div class="navbar-content">
+            <div class="bars">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <img src="./img/logo/logo.png" alt="Logo" class="logo" width="40">
+        </div>
+
+        <div class="navbar-content">
+            <div class="notification">
+                <i class="fa-solid fa-bell"></i>
+                <span class="number">7</span>
+                <div class="dropdown-menu">
+                    <div class="dropdown-content">
+                        <li>
+                            <img src="./img/users/user.jpg" alt="Usuario" width="40">
+                            <div class="text">
+                                Fusce ut leo pretium, luctus elit id, vulputate lectus.
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./img/users/user.jpg" alt="Usuario" width="40">
+                            <div class="text">
+                                Fusce ut leo pretium, luctus elit id, vulputate lectus.
+                            </div>
+                        </li>
+                    </div>
+                </div>
+            </div>
+
+            <div class="avatar">
+                <img src="./img/users/user.jpg" alt="Usuario" width="40">
+                <div class="dropdown-menu setting">
+                    <div class="item">
+                        <span class="fa-solid fa-user"></span> Perfil
+                    </div>
+                    <div class="item">
+                        <span class="fa-solid fa-gear"></span> Configuração
+                    </div>
+                    <div class="item">
+                        <span class="fa-solid fa-arrow-right-from-bracket"></span> Sair
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Fim Navbar -->
+
+    <!-- Inicio Conteudo -->
+    <div class="content">
+        <!-- Inicio da Sidebar -->
+        <div class="sidebar">
+            <a href="index.html" class="sidebar-nav">
+                <i class="icon fa-solid fa-house"></i>
+                <span>Dashboard</span>
+            </a>
+            <a href="listar.html" class="sidebar-nav  active">
+                <i class="icon fa-solid fa-users"></i>
+                <span>Listar</span>
+            </a>
+            <a href="login.html" class="sidebar-nav">
+                <i class="icon fa-solid fa-arrow-right-from-bracket"></i>
+                <span>Sair</span>
+            </a>
+
+        </div>
+        <!-- Fim da Sidebar -->
+        <!-- Inicio do conteudo do administrativo -->
+        <div class="wrapper">
+            <div class="row">
+                <div class="top-list">
+                    <span class="title-content">Listar</span>
+                    <div class="top-list-right">
+                        Botão
+                    </div>
+                </div>
+                <table class="table-list">
+                    <thead class="list-head">
+                        <tr>
+                            <th class="list-head-content">ID</th>
+                            <th class="list-head-content">Nome</th>
+                            <th class="list-head-content">E-mail</th>
+                            <th class="list-head-content">Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody class="list-body">
+                        <tr>
+                            <td class="list-body-content">1</td>
+                            <td class="list-body-content">Wallace</td>
+                            <td class="list-body-content">wherlon@hotmail.com</td>
+                            <td class="list-body-content">Visualizar Editar Apagar</td>
+                        </tr>
+                        <tr>
+                            <td class="list-body-content">2</td>
+                            <td class="list-body-content">Paulo</td>
+                            <td class="list-body-content">Paulo@hotmail.com</td>
+                            <td class="list-body-content">Visualizar Editar Apagar</td>
+                        </tr>
+                        <tr>
+                            <td class="list-body-content">3</td>
+                            <td class="list-body-content">Lucas</td>
+                            <td class="list-body-content">Lucas@gmail.com</td>
+                            <td class="list-body-content">Visualizar Editar Apagar</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- Fim do conteudo do administrativo -->
+    </div>
+    <!-- Fim Conteudo -->
+
+    <!--  -->
+
+    <script src="./js/adm.js"></script>
+</body>
+
+</html>
