@@ -1,22 +1,22 @@
 <?php
 // Receber a url
 $url = filter_input(INPUT_GET, 'url', FILTER_DEFAULT);
-var_dump($url);
+
+// Incluir a biblioteca para limpar a URL
+include_once "./app/sts/lib/lib_clean_url.php";
+$url_clean = cleanUrl($url);
 
 // Converter a string em arry
-$url_path = explode("/", $url);
-var_dump($url_path);
+$url_path = explode("/", $url_clean);
 
 // Verificar se existe a posição 1 no array
 if(isset($url_path['0'])){
     $path_page = $url_path['0'];
-    var_dump($path_page);
 }
 
 // Verificar se existe a posição 2 no array
 if(isset($url_path['1'])){
     $path_detail = $url_path['1'];
-    var_dump($path_detail);
 }
 ?>
 <!DOCTYPE html>
