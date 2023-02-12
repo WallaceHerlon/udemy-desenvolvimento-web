@@ -3,6 +3,9 @@
 // Incluir o arquivo de configuração
 include_once "./config/config.php";
 
+// Incluir o arquivo com a conexao ao banco de dados
+include_once "./config/connection.php";
+
 // Receber a url
 $url = filter_input(INPUT_GET, 'url', FILTER_DEFAULT);
 
