@@ -1,4 +1,8 @@
 <?php
+
+// Incluir o arquivo de configuração
+include_once "./config/config.php";
+
 // Receber a url
 $url = filter_input(INPUT_GET, 'url', FILTER_DEFAULT);
 
