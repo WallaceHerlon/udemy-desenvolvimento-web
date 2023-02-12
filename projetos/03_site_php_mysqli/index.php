@@ -36,6 +36,9 @@ if(isset($url_path['1'])){
 
 <body>
     <?php
+
+    // Incluir o arquivo com menu
+    include_once "./app/sts/include/menu.php";
     // Verificar se tem o nome da página
     if (!empty($path_page)) {
         if (file_exists("app/sts/view/" . $path_page . ".php")) {
