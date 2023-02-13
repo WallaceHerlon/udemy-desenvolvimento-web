@@ -14,7 +14,7 @@ $port = DBPORT;
 $conn = mysqli_connect($host, $user, $password, $dbname);
 
 if($conn){
-    echo "Conexão realizada com sucesso!<br>";
+    //echo "Conexão realizada com sucesso!<br>";
 }else{
     die("Erro - 002: Por favor tente novamente. Caso o problema persista, entre em contato o administrador " . EMAIL);
 }
