@@ -1,5 +1,8 @@
 <?php
 
+// Definir um fuso horario padrao
+date_default_timezone_set('America/Sao_Paulo');
+
 //True - Apresentar a mensagem de alerta com o erro
 //False - Nao apresentar a mensagem de alerta com o erro
 ini_set('display_errors', true);
