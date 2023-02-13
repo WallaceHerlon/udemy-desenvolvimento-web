@@ -54,6 +54,8 @@ if(isset($url_path['1'])){
         include "app/sts/view/home.php";
     }
     ?>
+
+<script src="app/sts/assets/js/custom_sts.js"></script>
 </body>
 
 </html>

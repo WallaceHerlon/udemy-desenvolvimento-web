@@ -92,8 +92,10 @@ if (!empty($data['SendAddMsg'])) {
 
 ?>
 
+<span id="msg"></span>
+
 <!-- Inicio do formulario -->
-<form method="POST" action="">
+<form method="POST" action="" id="form-add-msg">
     <label>Nome</label>
     <input type="text" name="name" id="name" placeholder="Digitie o nome completo"><br><br>
 
