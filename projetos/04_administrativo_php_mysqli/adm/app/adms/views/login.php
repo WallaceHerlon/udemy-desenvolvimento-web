@@ -82,7 +82,10 @@ if (!empty($data['SendLogin'])) {
     }
 }
 ?>
-<form method="POST" action="">
+
+<span id="msg"></span>
+
+<form method="POST" action="" id="form-login">
     <?php
     $username = "";
     if (isset($data['username'])) {
@@ -90,7 +93,7 @@ if (!empty($data['SendLogin'])) {
     }
     ?>
     <label>Usuário</label>
-    <input type="text" name="username" placeholder="Digite o usuário ou e-mail" value="<?php echo $username; ?>" autofocus required><br><br>
+    <input type="text" name="username" id="username" placeholder="Digite o usuário ou e-mail" value="<?php echo $username; ?>" autofocus required><br><br>
 
     <?php
     $password = "";
@@ -99,7 +102,7 @@ if (!empty($data['SendLogin'])) {
     }
     ?>
     <label>Senha</label>
-    <input type="password" name="password" placeholder="Digite a senha" value="<?php echo $password; ?>" required><br><br>
+    <input type="password" name="password" id="password" placeholder="Digite a senha" value="<?php echo $password; ?>" required><br><br>
 
     <input type="submit" name="SendLogin" value="Acessar">
 </form>

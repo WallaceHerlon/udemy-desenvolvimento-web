@@ -58,6 +58,8 @@ if((isset($url_path['1'])) and (!empty($url_path['1']))){
         include_once "app/adms/views/login.php";
     }
     ?>
+
+    <script src="<?php echo URLADM; ?>/app/adms/assets/js/custom_adms.js"></script>
 </body>
 
 </html>
