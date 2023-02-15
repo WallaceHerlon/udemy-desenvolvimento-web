@@ -4,8 +4,12 @@
 $url = filter_input(INPUT_GET, "url", FILTER_DEFAULT);
 // var_dump($url);
 
+// Incluir a biblioteca para limpar a URL
+include_once "./app/adms/lib/lib_clean_url.php";
+$url_clean = cleanUrl($url);
+
 // Converte a string em array
-$url_path = explode("/", $url);
+$url_path = explode("/", $url_clean);
 // var_dump($url_path);
 
 // Verificar se existe a posicao 1 no array
