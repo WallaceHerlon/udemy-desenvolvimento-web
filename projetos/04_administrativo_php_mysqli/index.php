@@ -1,5 +1,8 @@
 <?php
 
+// Constante que define que o usuario esta acessando paginas internas atraves da pagina "index.php".
+define('C7E3L8K9E5', true);
+
 // Receber a url
 $url = filter_input(INPUT_GET, "url", FILTER_DEFAULT);
 // var_dump($url);
