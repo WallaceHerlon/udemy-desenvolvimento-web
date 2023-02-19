@@ -34,7 +34,7 @@ if (!empty($data['SendLogin'])) {
     $data = array_map('trim', $data);
 
     // Acessa o IF quando houver campo vazio
-    if(in_array("", $data)){
+    if (in_array("", $data)) {
         $empty_input = true;
         echo "<p style='color: #f00;'>Erro: Necessário preencher todos os campos!</p>";
     }
@@ -90,20 +90,25 @@ if (!empty($data['SendLogin'])) {
     }
 }
 
+?>
+
+<h1>Login</h1>
+
+<?php
+
 // Verificar se existe a mensagem na sessao
-if(isset($_SESSION['msg'])){
+if (isset($_SESSION['msg'])) {
     // Imprimir a mensagem
     echo $_SESSION['msg'];
     // Destroi a variavel global que possui a mensagem
     unset($_SESSION['msg']);
 }
 ?>
-<h1>Login</h1>
 
 <!-- Recebe a mensagem do JavaScript -->
 <span id="msg"></span>
 
-<!-- Inicio formulario --> 
+<!-- Inicio formulario -->
 <form method="POST" action="" id="form-login">
     <?php
     // Manter os dados no campo
@@ -128,8 +133,8 @@ if(isset($_SESSION['msg'])){
     <input type="password" name="password" id="password" placeholder="Digite a senha" value="<?php echo $password; ?>" required><br><br>
 
     <input type="submit" name="SendLogin" value="Acessar">
-</form><br>
-<!-- Fim formulario --> 
+</form>
+<!-- Fim formulario -->
 
 <p>
     <a href="<?php echo URLADM . '/login_new_user'; ?>">Cadastrar</a> - <a href="<?php echo URLADM . '/login_recover_password'; ?>">Esqueceu a senha</a>
